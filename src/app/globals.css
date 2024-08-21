@@ -31,3 +31,77 @@ body {
     text-wrap: balance;
   }
 }
+
+/* Base scrollbar styles for desktop */
+::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* Track remains invisible */
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 8px; /* Rounded corners for the thumb */
+  background: linear-gradient(135deg, #0d47a1, #64b5f6); /* Darker blue gradient */
+  background-size: 200% 200%; /* Larger background for smooth animation */
+  box-shadow: 0 0 10px rgba(13, 71, 161, 0.6); /* Darker blue glow effect */
+  transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+  animation: colorPulse 4s linear infinite; /* Color animation */
+}
+
+/* Keyframes for color animation */
+@keyframes colorPulse {
+  0% {
+    background-position: 0% 0%;
+    background: linear-gradient(135deg, #0d47a1, #64b5f6); /* Darker blue gradient */
+  }
+  50% {
+    background-position: 100% 100%;
+    background: linear-gradient(135deg, #002171, #42a5f5); /* Even darker blue gradient */
+  }
+  100% {
+    background-position: 0% 0%;
+    background: linear-gradient(135deg, #0d47a1, #64b5f6); /* Back to darker blue gradient */
+  }
+}
+
+::-webkit-scrollbar-thumb:hover {
+  transform: scale(1.1); /* Slightly enlarge scrollbar on hover */
+  box-shadow: 0 0 20px rgba(13, 71, 161, 0.9); /* Enhanced darker blue glow effect on hover */
+}
+
+/* Mobile-specific scrollbar styles */
+@media (max-width: 767px) {
+  ::-webkit-scrollbar {
+    width: 8px; /* Thinner scrollbar on mobile */
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px; /* Slightly larger border radius for mobile */
+    background: linear-gradient(135deg, #1e88e5, #81d4fa); /* Lighter blue gradient for mobile */
+    box-shadow: 0 0 8px rgba(30, 136, 229, 0.5); /* Lighter blue glow effect */
+    animation: colorPulseMobile 4s linear infinite; /* Mobile-specific color animation */
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    transform: scale(1.2); /* More pronounced scaling on hover for mobile */
+    box-shadow: 0 0 15px rgba(30, 136, 229, 0.8); /* Enhanced glow effect on hover for mobile */
+  }
+
+  /* Keyframes for mobile color animation */
+  @keyframes colorPulseMobile {
+    0% {
+      background-position: 0% 0%;
+      background: linear-gradient(135deg, #1e88e5, #81d4fa); /* Lighter blue gradient */
+    }
+    50% {
+      background-position: 100% 100%;
+      background: linear-gradient(135deg, #1976d2, #64b5f6); /* Darker blue gradient */
+    }
+    100% {
+      background-position: 0% 0%;
+      background: linear-gradient(135deg, #1e88e5, #81d4fa); /* Back to lighter blue gradient */
+    }
+  }
+}
