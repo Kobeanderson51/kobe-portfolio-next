@@ -88,7 +88,7 @@ export default function Projects() {
                                 </div>
                             </div>
                             <h3 className="text-xl md:text-2xl font-semibold mt-4 mb-2 text-gray-900 group-hover:text-blue-600 transition-colors duration-150">
-                                Todo App
+                                To-do App
                             </h3>
                             <p className="text-base md:text-lg text-gray-600">
                                 A task management app with features for creating, updating, and deleting tasks.
