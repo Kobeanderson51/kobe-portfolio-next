@@ -10,6 +10,7 @@ import ContactForm from './components/ContactForm.js';
 function App() {
   return (
     <>
+      <title>Kobe&apos;s Portfolio</title>
       <div className='bg-white'>
       <Nav />
       <Hero />
