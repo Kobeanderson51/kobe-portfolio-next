@@ -1,12 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
 
-import capstoneImage from '../../../public/images/Capstone.png';
-import golfAppImage from '../../../public/images/Golf-app.jpg';
-import todoAppImage from '../../../public/images/todo-app.PNG';
-import balanceTrackerImage from '../../../public/images/Balance-tracker.jpg';
-import ryParisImage from '../../../public/images/ryparis.jpg';
-
 export default function Projects() {
     return (
         <div>
@@ -16,6 +10,7 @@ export default function Projects() {
                         My Projects
                     </h2>
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12">
+                        
                         <a 
                             href="https://mtechcapstone.onrender.com/" 
                             className="bg-white p-6 rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105 group" 
@@ -24,7 +19,7 @@ export default function Projects() {
                         >
                             <div className="relative w-full h-64">
                                 <Image 
-                                    src={capstoneImage} 
+                                    src="/images/Capstone.png" 
                                     alt="Capstone Project" 
                                     layout="fill" 
                                     objectFit="cover" 
@@ -52,7 +47,7 @@ export default function Projects() {
                         >
                             <div className="relative w-full h-64">
                                 <Image 
-                                    src={golfAppImage} 
+                                    src="/images/Golf-app.jpg" 
                                     alt="Golf Tracker" 
                                     layout="fill" 
                                     objectFit="cover" 
@@ -80,7 +75,7 @@ export default function Projects() {
                         >
                             <div className="relative w-full h-64">
                                 <Image 
-                                    src={todoAppImage} 
+                                    src="/images/todo-app.PNG" 
                                     alt="Todo App" 
                                     layout="fill" 
                                     objectFit="cover" 
@@ -108,7 +103,7 @@ export default function Projects() {
                         >
                             <div className="relative w-full h-64">
                                 <Image 
-                                    src={balanceTrackerImage} 
+                                    src="/images/Balance-tracker.jpg" 
                                     alt="Balance Tracker" 
                                     layout="fill" 
                                     objectFit="cover" 
@@ -136,7 +131,7 @@ export default function Projects() {
                         >
                             <div className="relative w-full h-64">
                                 <Image 
-                                    src={ryParisImage} 
+                                    src="/images/ryparis.jpg" 
                                     alt="RY Paris" 
                                     layout="fill" 
                                     objectFit="cover" 
