@@ -9,7 +9,7 @@ export default function About() {
                     <div className="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-8">
                         <div className="relative w-48 h-48 rounded-full overflow-hidden shadow-lg">
                             <Image 
-                                src="/images/IMG_1458.jpg" 
+                                src="/images/IMG_1458.JPG" 
                                 alt="Kobe Anderson" 
                                 layout="fill" 
                                 objectFit="cover" 

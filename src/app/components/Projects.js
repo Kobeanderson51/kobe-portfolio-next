@@ -19,7 +19,7 @@ export default function Projects() {
                         >
                             <div className="relative w-full h-64">
                                 <Image 
-                                    src="/images/Capstone.png" 
+                                    src="/images/Capstone.PNG" 
                                     alt="Capstone Project" 
                                     layout="fill" 
                                     objectFit="cover" 
