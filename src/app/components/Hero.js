@@ -9,7 +9,7 @@ export default function Hero() {
             >
                 <div className="container mx-auto px-4">
                     <h2 className="text-3xl md:text-5xl font-bold mb-4">
-                        Hello, I'm Kobe Anderson
+                        Hello, I&apos;m Kobe Anderson
                     </h2>
                     <p className="text-base md:text-xl mb-6">
                         Web Developer | Currently Pursuing Web Development at Mountainland Technical College
