@@ -32,10 +32,10 @@ export default function Projects() {
                                 </div>
                             </div>
                             <h3 className="text-xl md:text-2xl font-semibold mt-4 mb-2 text-gray-900 group-hover:text-blue-600 transition-colors duration-150">
-                                Capstone Project
+                                Capstone Project 
                             </h3>
                             <p className="text-base md:text-lg text-gray-600">
-                                An application designed for student registration and management.
+                                An application designed for student registration and management. <span className='text-black font-bold'>Username: kobe Password: 1</span>
                             </p>
                         </a>
 
