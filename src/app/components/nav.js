@@ -78,6 +78,15 @@ export default function Nav() {
                                 </li>
                                 <li>
                                     <a
+                                        href="#about"
+                                        className="text-2xl text-white hover:text-blue-300 transition-all duration-700 ease-in-out"
+                                        onClick={(e) => handleScroll(e, '#about')}
+                                    >
+                                        About
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
                                         href="#contact"
                                         className="text-2xl text-white hover:text-blue-300 transition-all duration-700 ease-in-out"
                                         onClick={(e) => handleScroll(e, '#contact')}
@@ -90,6 +99,7 @@ export default function Nav() {
                     </div>
                 </div>
                 <ul className={`hidden lg:flex lg:space-x-6`}>
+                    
                     <li>
                         <a
                             href="#projects"
@@ -106,6 +116,15 @@ export default function Nav() {
                             onClick={(e) => handleScroll(e, '#skills')}
                         >
                             Skills
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="#about"
+                            className="text-lg hover:bg-gray-700 hover:text-blue-300 transition-all duration-700 ease-in-out px-3 py-2 rounded-lg hover:shadow-lg"
+                            onClick={(e) => handleScroll(e, '#about')}
+                        >
+                            About
                         </a>
                     </li>
                     <li>
