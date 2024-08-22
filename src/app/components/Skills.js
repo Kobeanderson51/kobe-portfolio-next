@@ -10,7 +10,7 @@ export default function Skills() {
                             'JavaScript', 'React', 'Node.js', 'PostgreSQL',
                             'Git/GitHub', 'Express.js', 'MongoDB',
                             'Next.js', 'TypeScript', 'JWT', 'Bcrypt', 
-                            'APIs', 'Agile/Scrum', 'AWS'
+                            'APIs', 'Agile/Scrum', 'AWS', 'Angular'
                         ].map((skill) => (
                             <div
                                 key={skill}

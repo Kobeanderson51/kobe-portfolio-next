@@ -7,16 +7,28 @@ export default function Nav() {
         setIsMenuOpen(!isMenuOpen);
     };
 
+    const handleScroll = (e, targetId) => {
+        e.preventDefault();
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+            window.scrollTo({
+                top: targetElement.offsetTop,
+                behavior: 'smooth',
+            });
+        }
+        setIsMenuOpen(false); // Close the menu after clicking
+    };
+
     return (
         <nav className="bg-blue-600 text-white shadow-lg">
             <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-                <a href="#" className="text-3xl font-bold hover:text-gray-300 transition-colors duration-300">
+                <a href="#" className="text-3xl font-bold hover:text-gray-300 transition-all duration-700 ease-in-out">
                     Kobe Anderson
                 </a>
                 <div className="block lg:hidden">
                     <button
                         onClick={toggleMenu}
-                        className="text-white focus:outline-none transition-transform duration-300 hover:scale-110"
+                        className="text-white focus:outline-none transition-transform duration-700 ease-in-out hover:scale-110"
                     >
                         <svg
                             className="w-6 h-6"
@@ -40,7 +52,7 @@ export default function Nav() {
                     <div className="flex flex-col items-center justify-between h-full">
                         <button
                             onClick={() => setIsMenuOpen(false)}
-                            className="absolute top-4 right-4 text-white text-3xl focus:outline-none transition-transform duration-300 hover:scale-110"
+                            className="absolute top-4 right-4 text-white text-3xl focus:outline-none transition-transform duration-700 ease-in-out hover:scale-110"
                         >
                             &times;
                         </button>
@@ -49,8 +61,8 @@ export default function Nav() {
                                 <li>
                                     <a
                                         href="#projects"
-                                        className="text-2xl text-white hover:text-blue-300 transition-colors duration-300"
-                                        onClick={() => setIsMenuOpen(false)}
+                                        className="text-2xl text-white hover:text-blue-300 transition-all duration-700 ease-in-out"
+                                        onClick={(e) => handleScroll(e, '#projects')}
                                     >
                                         Projects
                                     </a>
@@ -58,8 +70,8 @@ export default function Nav() {
                                 <li>
                                     <a
                                         href="#skills"
-                                        className="text-2xl text-white hover:text-blue-300 transition-colors duration-300"
-                                        onClick={() => setIsMenuOpen(false)}
+                                        className="text-2xl text-white hover:text-blue-300 transition-all duration-700 ease-in-out"
+                                        onClick={(e) => handleScroll(e, '#skills')}
                                     >
                                         Skills
                                     </a>
@@ -67,8 +79,8 @@ export default function Nav() {
                                 <li>
                                     <a
                                         href="#contact"
-                                        className="text-2xl text-white hover:text-blue-300 transition-colors duration-300"
-                                        onClick={() => setIsMenuOpen(false)}
+                                        className="text-2xl text-white hover:text-blue-300 transition-all duration-700 ease-in-out"
+                                        onClick={(e) => handleScroll(e, '#contact')}
                                     >
                                         Contact
                                     </a>
@@ -81,7 +93,8 @@ export default function Nav() {
                     <li>
                         <a
                             href="#projects"
-                            className="text-lg hover:bg-gray-700 hover:text-blue-300 transition-colors duration-300 px-3 py-2 rounded-lg hover:shadow-lg"
+                            className="text-lg hover:bg-gray-700 hover:text-blue-300 transition-all duration-700 ease-in-out px-3 py-2 rounded-lg hover:shadow-lg"
+                            onClick={(e) => handleScroll(e, '#projects')}
                         >
                             Projects
                         </a>
@@ -89,7 +102,8 @@ export default function Nav() {
                     <li>
                         <a
                             href="#skills"
-                            className="text-lg hover:bg-gray-700 hover:text-blue-300 transition-colors duration-300 px-3 py-2 rounded-lg hover:shadow-lg"
+                            className="text-lg hover:bg-gray-700 hover:text-blue-300 transition-all duration-700 ease-in-out px-3 py-2 rounded-lg hover:shadow-lg"
+                            onClick={(e) => handleScroll(e, '#skills')}
                         >
                             Skills
                         </a>
@@ -97,7 +111,8 @@ export default function Nav() {
                     <li>
                         <a
                             href="#contact"
-                            className="text-lg hover:bg-gray-700 hover:text-blue-300 transition-colors duration-300 px-3 py-2 rounded-lg hover:shadow-lg"
+                            className="text-lg hover:bg-gray-700 hover:text-blue-300 transition-all duration-700 ease-in-out px-3 py-2 rounded-lg hover:shadow-lg"
+                            onClick={(e) => handleScroll(e, '#contact')}
                         >
                             Contact
                         </a>
